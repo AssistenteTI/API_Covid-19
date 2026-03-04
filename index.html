@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados COVID</title>
+</head>
+
+<body>
+    <header>
+        <h1>Dados da Pandemia da COVID-19</h1>
+        <div id="status">
+        </div>
+    </header>
+    <main>
+        <h3>Insira a Sigla do Estado que deseja obter dos dados:</h3>
+        <input type="text" id="estado"  maxlength="2">
+        <button id="btnBuscar">Buscar</button>
+        <div id="resultado">
+            <h4><strong id="local"></strong></h4>
+            <strong id="casos"></strong><br>
+            <strong id="mortes"></strong><br>
+            <strong id="suspeitas"></strong><br>
+            <strong id="recusas"></strong><br>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
