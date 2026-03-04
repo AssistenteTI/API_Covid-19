@@ -1,0 +1,65 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: wheat;
+}
+header{
+    margin: auto auto 10px auto;
+    background-color: rgba(242, 192, 131, 0.938);
+    text-align: center;
+}
+#status{
+    text-align: right;
+    
+}
+main {
+    background-color: aliceblue;
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+}
+h3{
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+}
+input{
+    width: 450px ;
+    margin: 5px auto auto auto;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgba(250, 235, 215, 0.896);
+    text-align: center;
+}
+button {
+    margin: 5px auto auto auto;
+    padding: 5px;
+    background-color: rgba(172, 255, 47, 0.794);
+    padding: 5px;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: rgba(189, 245, 226, 0.893);
+
+}
+#resultado {
+    margin: auto auto auto 20px;
+    text-align: left;
+    padding:10px;
+}
+#dadosExtras {
+    text-align: left;
+    margin-left: 10px;
+    padding: 5px;
+}
+#dadosExtras > h2 {
+    text-align: center;
+    color: red;
+    padding: 5px;
+}
+#dadosExtras > p {
+    font-size: 20px;
+}
