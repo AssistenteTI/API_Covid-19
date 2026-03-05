@@ -57,9 +57,12 @@ button:hover {
 }
 #dadosExtras > h2 {
     text-align: center;
-    color: red;
-    padding: 5px;
+    color:black;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-weight: bolder;
 }
 #dadosExtras > p {
     font-size: 20px;
+    color: red;
 }

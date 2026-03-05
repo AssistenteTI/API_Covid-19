@@ -8,7 +8,8 @@ const mortes = document.querySelector("#mortes")
 const suspeitas = document.querySelector("#suspeitas")
 const recusas = document.querySelector("#recusas")
 const dadosExtras = document.querySelector("dadosExtras")
-const contar = document.querySelector("#contagem")
+const contarMaior = document.querySelector("#contagemMaior")
+const contarMenor = document.querySelector("#contagemMenor")
 
 fetch('https://covid19-brazil-api.vercel.app/api/status/v1')
     .then(res => res.json())
@@ -63,17 +64,15 @@ function buscardadosEstado(estado) {
                     .then(dados => {
                         const estado = dados.state
                         const mortes = dados.deaths
-                        
+
                         console.log(`Estado: ${dados.state} NUmero de MOrtos: ${mortes}`)
 
                         if (mortes > maisMortes) {
                             nomeEstado = dados.state
                             maisMortes = mortes
-                        }
-
-                        contar.innerHTML = `<p>Estado: ${nomeEstado}<p>
+                             contarMaior.innerHTML = `<p>Estado: ${nomeEstado}<p>
             <p>Numero de Mortes: ${maisMortes}<p>`
-                    })
+                        }})
                     .catch(err => console.error(err));
 
             }
